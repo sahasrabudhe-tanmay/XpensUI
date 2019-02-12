@@ -1,0 +1,29 @@
+.xp-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+    color: azure;
+    background-color: #4b9ced;
+    background-image: url(dropdown_arrow.png);
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 95% center;
+    border-radius: 5px;
+}
+
+.xp-select-option{
+    padding: 10px;
+    margin: 0;
+    width: 120px;
+    color: azure;
+    background-color: #4b9ced;
+}
+
+.xp-select-option:hover {
+    background-color: #3c80c1;
+}
