@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class XpAccordionComponent implements OnInit {
 
+  public isOpen = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public toggleAccordion() {
+    this.isOpen = !this.isOpen;
   }
 
 }
