@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'xp-accordion',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class XpAccordionComponent implements OnInit {
 
+  @Input() header: string;
+
+  public isOpen = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public toggleAccordion() {
+    this.isOpen = !this.isOpen;
   }
 
 }

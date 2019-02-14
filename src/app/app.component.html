@@ -10,3 +10,8 @@
 
 <br/><br/>
 
+<xp-accordion header="Header">Sample Accordion text!</xp-accordion>
+
+<xp-button btnName="Open Modal" (click)="openModal()"></xp-button>
+
+<xp-modal [isOpen]="showModal" modalHeader="Sample Modal" (closed)="closeModal()">This is a sample Modal!</xp-modal>

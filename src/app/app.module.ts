@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { XpDropdownComponent } from './components/base/xp-dropdown/xp-dropdown.component';
 import { XpAccordionComponent } from './components/base/xp-accordion/xp-accordion.component';
 import { XpButtonComponent } from './components/base/xp-button/xp-button.component';
+import { XpModalComponent } from './components/base/xp-modal/xp-modal.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { XpButtonComponent } from './components/base/xp-button/xp-button.compone
     XpDropdownComponent,
     XpAccordionComponent,
     XpButtonComponent,
+    XpModalComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,34 @@
+.accordion-container {
+    margin: 5px;
+    width: 80%;
+}
+
 .accordion-header {
-    display: inline;
+    position: relative;
+    background-color: #4b9ced;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: o;
+}
+
+.toggle-btn {
+    float: left;
+    margin: 0 5px;
+    width: 4%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: 50%;
+    font-size: 30px;
+}
+
+.accordion-content {
+    background-color: #dbdbdb;
+    margin: 0 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px;
 }

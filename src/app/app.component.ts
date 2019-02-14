@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  
+  public showModal = false;
   public options: string[] = [
     'Text 1',
     'Text 2',
@@ -15,4 +17,13 @@ export class AppComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
+
 }
