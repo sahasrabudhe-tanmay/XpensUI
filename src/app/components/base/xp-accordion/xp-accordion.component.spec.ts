@@ -22,4 +22,18 @@ describe('XpAccordionComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should open closed accordion', () => {
+    component.toggleAccordion();
+
+    expect(component.isOpen).toBeTruthy();
+  });
+
+  it('should close opened accordion', () => {
+    component.isOpen = true;
+
+    component.toggleAccordion();
+
+    expect(component.isOpen).toBeFalsy();
+  });
 });

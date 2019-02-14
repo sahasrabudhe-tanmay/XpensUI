@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'xp-accordion',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./xp-accordion.component.css']
 })
 export class XpAccordionComponent implements OnInit {
+
+  @Input() header: string;
 
   public isOpen = false;
 
