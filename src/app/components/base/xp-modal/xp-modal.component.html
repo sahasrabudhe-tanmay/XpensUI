@@ -1,0 +1,11 @@
+<div class="modal-container" *ngIf="isOpen">
+  <div class="modal-window">
+    <div class="modal-header">
+      <span class="close-btn" (click)="toggleModal()">&#9587;</span>
+      <span class="header-content">Modal Header</span>
+    </div>
+    <div class="modal-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
