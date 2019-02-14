@@ -22,4 +22,12 @@ describe('XpModalComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should close modal', () => {
+    component.closeModal();
+
+    component.closed.subscribe(event =>{
+      expect(event).toBeFalsy();
+    });
+  });
 });
