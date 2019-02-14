@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'xp-modal',
@@ -7,15 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class XpModalComponent implements OnInit {
 
-  public isOpen = true;
+  @Input() isOpen = true;
+  @Input() modalHeader: string;
+  @Output() closed: EventEmitter<boolean> = new EventEmitter();
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  toggleModal() {
-    this.isOpen = !this.isOpen;
+  closeModal() {
+    this.isOpen = false;
+    this.closed.emit(this.isOpen);
   }
 
 }
