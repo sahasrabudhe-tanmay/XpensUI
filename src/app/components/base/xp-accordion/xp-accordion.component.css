@@ -1,17 +1,54 @@
+::ng-deep :root {
+    --padding: 10px;
+    --font-size: 30px;
+    --border-radius: 5px;
+}
+
 .accordion-container {
     margin: 5px;
     width: 80%;
 }
 
-.accordion-header {
+.header-container {
+    width: 100%;
     position: relative;
-    background-color: #4b9ced;
-    color: white;
-    font-size: 30px;
+}
+
+.accordion-header {
+    float: left;
+    background-color: #E0E0E0;
+    color: #424242;
+    font-size: var(--font-size);
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
     outline: o;
+    padding: var(--padding);
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.cost-container {
+    float: right;
+    background-color: #429245;
+    width: 20%;
+    color: #ffffff;
+    padding: var(--padding);
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    font-weight: bold;
+    text-align: center;
+}
+
+.cost-container i {
+    margin-right: 5px;
+}
+
+.cost-container .cost {
+    margin-left: 5px;
 }
 
 .toggle-btn {
@@ -26,9 +63,10 @@
 }
 
 .accordion-content {
-    background-color: #dbdbdb;
+    background-color: #000000;
     margin: 0 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 10px;
+    padding: var(--padding);
+    color: #ffffff;
 }

@@ -12,26 +12,15 @@ export class XpButtonComponent implements OnInit {
 
   public typeClass = {
     'default-btn': false,
-    'save-btn': false,
-    'continue-btn': false,
-    'cancel-btn': false,
-    'add-btn': false
+    'cancel-btn': false
   };
 
   constructor() { }
 
   ngOnInit() {
 
-    if (this.btnType === 'continue') {
-      this.typeClass["continue-btn"] = true;
-    } else if (this.btnType === 'save') {
-      this.typeClass["save-btn"] = true;
-    } else if (this.btnType === 'cancel') {
+    if (this.btnType === 'cancel') {
       this.typeClass["cancel-btn"] = true;
-    } else if (this.btnType === 'add') {
-      this.typeClass["default-btn"] = true;
-      this.typeClass["add-btn"] = true;
-      this.btnName = '+';
     } else {
       this.typeClass["default-btn"] = true;
     }

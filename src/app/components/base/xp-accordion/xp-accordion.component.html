@@ -1,8 +1,14 @@
 <div class="accordion-container">
-  <div class="accordion-header" (click)="toggleAccordion()">
-    <span class="toggle-btn" *ngIf="!isOpen">&#43;</span>
-    <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
-    <span class="header">{{header}}</span>
+  <div class="header-container">
+    <div class="accordion-header" (click)="toggleAccordion()">
+      <span class="toggle-btn" *ngIf="!isOpen">&#43;</span>
+      <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
+      <span class="header">{{header}}</span>
+    </div>
+    <div class="cost-container">
+      <i class="fas fa-rupee-sign"></i>
+      <span class="cost">{{cost}}</span>
+    </div>
   </div>
   <div class="accordion-content" *ngIf="isOpen">
     <ng-content></ng-content>
