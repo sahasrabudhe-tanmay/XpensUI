@@ -29,28 +29,6 @@
     box-sizing: border-box;
 }
 
-.cost-container {
-    float: right;
-    background-color: #429245;
-    width: 20%;
-    color: #ffffff;
-    padding: var(--padding);
-    box-sizing: border-box;
-    font-size: var(--font-size);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    font-weight: bold;
-    text-align: center;
-}
-
-.cost-container i {
-    margin-right: 5px;
-}
-
-.cost-container .cost {
-    margin-left: 5px;
-}
-
 .toggle-btn {
     float: left;
     margin: 0 5px;

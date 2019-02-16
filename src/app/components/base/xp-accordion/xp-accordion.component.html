@@ -5,10 +5,7 @@
       <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
       <span class="header">{{header}}</span>
     </div>
-    <div class="cost-container">
-      <i class="fas fa-rupee-sign"></i>
-      <span class="cost">{{cost}}</span>
-    </div>
+    <cost [cost]="cost"></cost>
   </div>
   <div class="accordion-content" *ngIf="isOpen">
     <ng-content></ng-content>
