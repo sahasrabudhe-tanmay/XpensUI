@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class XpAccordionComponent implements OnInit {
 
   @Input() header: string;
+  @Input() cost: string;
+  @Input() headerFontSize: string = '30';
 
   public isOpen = false;
 

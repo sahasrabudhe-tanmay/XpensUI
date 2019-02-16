@@ -1,17 +1,31 @@
+::ng-deep :root {
+    --padding: 10px;
+    --font-size: 30px;
+    --border-radius: 5px;
+}
+
 .accordion-container {
     margin: 5px;
     width: 80%;
 }
 
-.accordion-header {
+.header-container {
+    width: 100%;
     position: relative;
-    background-color: #4b9ced;
-    color: white;
-    font-size: 30px;
+}
+
+.accordion-header {
+    float: left;
+    background-color: #E0E0E0;
+    color: #424242;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
     outline: o;
+    padding: var(--padding);
+    width: 80%;
+    box-sizing: border-box;
 }
 
 .toggle-btn {
@@ -22,13 +36,14 @@
     text-align: center;
     border-radius: 50%;
     vertical-align: 50%;
-    font-size: 30px;
 }
 
 .accordion-content {
-    background-color: #dbdbdb;
+    background-color: #000000;
     margin: 0 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 10px;
+    padding: var(--padding);
+    color: #ffffff;
+    box-sizing: border-box;
 }

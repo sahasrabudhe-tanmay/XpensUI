@@ -20,46 +20,20 @@
 }
 
 .default-btn {
-    background-color: #4b9ced;
-    color: white;
+    background-color: #0a674f;
+    color: #f2fffb;
 }
 
 .default-btn:hover {
-    background-color: #3c80c1;
-}
-
-.save-btn {
-    background-color: #40b77b;
-    color: white;
-}
-
-.save-btn:hover {
-    background-color: #36a56d;
-}
-
-.continue-btn {
-    background-color: #f29e18;
-    color: white;
-}
-
-.continue-btn:hover {
-    background-color: #c48115;
+    background-color: #104d3d;
 }
 
 .cancel-btn {
-    background-color: #dbdbdb;
-    color: #3c80c1;
+    background-color: #f2fffb;
+    color: #0a674f;
     font-weight: bold;
 }
 
 .cancel-btn:hover {
-    background-color: #bcbcbc;
-}
-
-.add-btn{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    text-align: center;
+    background-color: #e6e6e6;
 }

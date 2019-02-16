@@ -1,8 +1,11 @@
 <div class="accordion-container">
-  <div class="accordion-header" (click)="toggleAccordion()">
-    <span class="toggle-btn" *ngIf="!isOpen">&#43;</span>
-    <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
-    <span class="header">{{header}}</span>
+  <div class="header-container">
+    <div class="accordion-header" [style.font-size.px]="headerFontSize" (click)="toggleAccordion()">
+      <span class="toggle-btn" *ngIf="!isOpen">&#43;</span>
+      <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
+      <span class="header">{{header}}</span>
+    </div>
+    <cost [cost]="cost" [fontSize]="headerFontSize"></cost>
   </div>
   <div class="accordion-content" *ngIf="isOpen">
     <ng-content></ng-content>
