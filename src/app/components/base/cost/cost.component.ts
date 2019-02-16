@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CostComponent implements OnInit {
 
   @Input() cost: string;
+  @Input() fontSize: string;
 
   constructor() { }
 

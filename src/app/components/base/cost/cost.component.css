@@ -10,7 +10,6 @@
     color: #ffffff;
     padding: var(--padding);
     box-sizing: border-box;
-    font-size: var(--font-size);
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     font-weight: bold;

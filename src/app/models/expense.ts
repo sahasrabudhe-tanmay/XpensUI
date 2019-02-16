@@ -5,10 +5,4 @@ export class Expense {
     public type: string;
     public cost: string;
 
-    static readonly TYPES = {
-        FOOD: 'Food',
-        TRAVEL: 'Travel',
-        MISC: 'Miscellaneous'
-    }
-
 }

@@ -1,0 +1,36 @@
+::ng-deep :root {
+    --border-radius: 5px;
+    --background-color: #424242;
+    --color: #ffffff;
+    --padding: 10px;
+    --margin: 5px;
+}
+
+.expense-container {
+    width: 100%;
+    position: relative;
+}
+
+.detail-container {
+    position: relative;
+    float: left;
+    width: 80%;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--color);
+    box-sizing: border-box;
+    padding: var(--padding);
+}
+
+.detail-container i {
+    float: left;
+    margin-right: var(--margin);
+    width: 5%;
+    text-align: right;
+}
+
+.detail-container .expense-info {
+    margin-left: var(--margin);
+    width: 95%;
+}
