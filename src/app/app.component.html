@@ -7,12 +7,8 @@
 
 <br/><br/>
 
-<xp-accordion header="Header" cost="500">
-    <expense type="fas fa-gas-pump" cost="500" name="Fuel" fontSize="15"></expense>
-</xp-accordion>
-
-<br/><br/>
-
 <xp-button btnName="Open Modal" (click)="openModal()"></xp-button>
 
-<xp-modal [isOpen]="showModal" modalHeader="Sample Modal" (closed)="closeModal()">This is a sample Modal!</xp-modal>
+<xp-modal [isOpen]="showModal" modalHeader="Sample Modal" (closed)="closeModal()">
+    <xp-day></xp-day>
+</xp-modal>

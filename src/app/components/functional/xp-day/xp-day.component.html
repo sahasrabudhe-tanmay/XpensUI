@@ -1,0 +1,9 @@
+<div class="day-container">
+  <xp-accordion [header]="header" cost="dayCost">
+    <div class="content-container">
+      <div class="expense-component" *ngFor="let expenseType of expenseTypeList">
+        <xp-expense-type [type]="expenseType.className" [cost]="expenseType.totalCost" [name]="expenseType.name" fontSize="10"></xp-expense-type>
+      </div>
+    </div>
+  </xp-accordion>
+</div>

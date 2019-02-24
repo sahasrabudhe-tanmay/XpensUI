@@ -5,7 +5,7 @@
       <span class="toggle-btn" *ngIf="isOpen">&#45;</span>
       <span class="header">{{header}}</span>
     </div>
-    <cost [cost]="cost" [fontSize]="headerFontSize"></cost>
+    <xp-cost [cost]="cost" [fontSize]="headerFontSize"></xp-cost>
   </div>
   <div class="accordion-content" *ngIf="isOpen">
     <ng-content></ng-content>
